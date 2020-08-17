@@ -112,7 +112,6 @@ div .list-list {
 
 /* Шапка*/
 .page-header {
-  padding-top: 25px;
   padding-bottom: 0;
   border: 1px solid #ececec;
 }
@@ -221,15 +220,21 @@ div .list-list {
   color: var(--accent-color);
   transition: color 250ms var(--transition-bezier);
 }
+.mail-to {
+  width: 16px;
+  height: 12px;
+}
+.call-to {
+  width: 10px;
+  height: 16px;
+}
 .contact a {
   text-decoration-line: none;
   display: inline-flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .contacts-icon {
   fill: currentColor;
-  height: 20px;
-  width: 20px;
   margin-right: 10px;
   display: inline-flex;
   align-items: center;
@@ -308,7 +313,7 @@ div .list-list {
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
   opacity: 1;
-  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--transition-bezier);
 }
 .backdrop.is-hidden {
   visibility: hidden;
